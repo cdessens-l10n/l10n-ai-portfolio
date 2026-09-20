@@ -259,6 +259,16 @@ h1 {
   max-width: 16ch;
 }
 
+.intro-stack h1 {
+  /* Fraunces ball-terminal f collides with l/o when tightly tracked */
+  letter-spacing: 0.012em;
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0, "clig" 0, "calt" 0;
+  font-kerning: normal;
+  font-optical-sizing: auto;
+  font-variation-settings: "opsz" 72, "SOFT" 50, "WONK" 0;
+}
+
 h2 {
   font-size: clamp(1.45rem, 2.4vw, 1.9rem);
 }
