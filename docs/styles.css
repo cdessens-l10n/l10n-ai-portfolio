@@ -13,6 +13,7 @@
   --max: 68rem;
   --radius: 4px;
   --font-display: "Fraunces", Georgia, serif;
+  --font-display-h1: "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   --font-body: "Figtree", "Segoe UI", sans-serif;
   --header-h: 3.4rem;
   --chrome-h: 3.2rem;
@@ -260,14 +261,18 @@ h1 {
 }
 
 .intro-stack h1 {
-  /* Fraunces ball-terminal f collides with l/o — open tracking + soft axis */
-  letter-spacing: 0.04em;
-  font-weight: 600;
-  font-variant-ligatures: none;
-  font-feature-settings: "liga" 0, "clig" 0, "calt" 0, "kern" 1;
-  font-kerning: normal;
-  font-optical-sizing: none;
-  font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 0;
+  font-family: var(--font-display-h1);
+  font-weight: 650;
+  font-optical-sizing: auto;
+  letter-spacing: -0.015em;
+  max-width: none;
+  font-variant-ligatures: common-ligatures;
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+}
+
+.intro-stack h1 br {
+  display: block;
 }
 
 h2 {
