@@ -260,13 +260,14 @@ h1 {
 }
 
 .intro-stack h1 {
-  /* Fraunces ball-terminal f collides with l/o when tightly tracked */
-  letter-spacing: 0.012em;
+  /* Fraunces ball-terminal f collides with l/o — open tracking + soft axis */
+  letter-spacing: 0.04em;
+  font-weight: 600;
   font-variant-ligatures: none;
-  font-feature-settings: "liga" 0, "clig" 0, "calt" 0;
+  font-feature-settings: "liga" 0, "clig" 0, "calt" 0, "kern" 1;
   font-kerning: normal;
-  font-optical-sizing: auto;
-  font-variation-settings: "opsz" 72, "SOFT" 50, "WONK" 0;
+  font-optical-sizing: none;
+  font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 0;
 }
 
 h2 {
