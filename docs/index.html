@@ -30,105 +30,107 @@
 <body>
   <header class="site-header">
     <div class="wrap nav">
-      <a class="brand" href="#top">Christelle Dessens</a>
+      <a class="brand" href="#slide-intro" data-slide="0">Christelle Dessens</a>
       <ul class="nav-links">
-        <li><a href="#outcomes">Outcomes</a></li>
-        <li><a href="#autopilot">UI Autopilot</a></li>
-        <li><a href="#terminology">Terminology</a></li>
-        <li><a href="#also">Also built</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#slide-outcomes" data-slide="1">Outcomes</a></li>
+        <li><a href="#slide-autopilot" data-slide="2">UI Autopilot</a></li>
+        <li><a href="#slide-terminology" data-slide="4">Terminology</a></li>
+        <li><a href="#slide-also" data-slide="6">Also built</a></li>
+        <li><a href="#slide-faq" data-slide="7">FAQ</a></li>
+        <li><a href="#slide-contact" data-slide="8">Contact</a></li>
       </ul>
     </div>
   </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div>
-          <p class="eyebrow">Localization · AI workflows · French</p>
-          <h1>AI skills for language management</h1>
-          <p class="lede">
-            I design agent skills and gated automation that turn glossaries, style guides,
-            and review policy into repeatable production systems — built for Localization
-            Managers, project leads, and Loc directors who need quality control at scale.
-          </p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="https://www.linkedin.com/in/frenchlanguagemanager" rel="noopener noreferrer" target="_blank">LinkedIn</a>
-            <a class="btn btn-secondary" href="mailto:christelledessens@gmail.com">Email</a>
-            <a class="btn btn-secondary" href="#autopilot">See the systems</a>
+  <div class="deck-shell">
+    <main class="deck" id="deck" tabindex="0" aria-label="Portfolio slides">
+      <section class="slide" id="slide-intro" data-label="Intro" aria-label="Introduction">
+        <div class="wrap slide-inner">
+          <div class="hero-grid">
+            <div>
+              <p class="eyebrow">Localization · AI workflows · French</p>
+              <h1>AI skills for language management</h1>
+              <p class="lede">
+                I design agent skills and gated automation that turn glossaries, style guides,
+                and review policy into repeatable production systems — built for Localization
+                Managers, project leads, and Loc directors who need quality control at scale.
+              </p>
+              <div class="cta-row">
+                <a class="btn btn-primary" href="https://www.linkedin.com/in/frenchlanguagemanager" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+                <a class="btn btn-secondary" href="mailto:christelledessens@gmail.com">Email</a>
+                <button class="btn btn-secondary" type="button" data-goto="2">See the systems</button>
+              </div>
+              <p class="hint" style="margin-top:1rem">Use ← → keys or the arrows below to move between slides.</p>
+            </div>
+            <aside class="hero-aside">
+              <p>
+                <strong>Context:</strong> Product UI localization for a SaaS collaboration platform,
+                EN→FR, enterprise TMS + termbase + translation memory, with an AI coding agent
+                as the execution layer.
+              </p>
+              <p style="margin-top:0.85rem">
+                <strong>What this page is:</strong> a high-level portfolio of two flagship skills
+                and related workflows. Source code stays private; architecture and outcomes are public.
+              </p>
+            </aside>
           </div>
         </div>
-        <aside class="hero-aside">
-          <p>
-            <strong>Context:</strong> Product UI localization for a SaaS collaboration platform,
-            EN→FR, enterprise TMS + termbase + translation memory, with an AI coding agent
-            as the execution layer.
-          </p>
-          <p style="margin-top:0.85rem">
-            <strong>What this page is:</strong> a high-level portfolio of two flagship skills
-            and related workflows. Source code stays private; architecture and outcomes are public.
-          </p>
-        </aside>
-      </div>
-    </section>
+      </section>
 
-    <section id="outcomes">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>What leaders care about</h2>
-          <p>Measured in production Product UI review batches — honest triage, not “AI replaced the linguist.”</p>
+      <section class="slide" id="slide-outcomes" data-label="Outcomes" aria-label="Outcomes">
+        <div class="wrap slide-inner">
+          <div class="section-head">
+            <h2>What leaders care about</h2>
+            <p>Measured in production Product UI review batches — honest triage, not “AI replaced the linguist.”</p>
+          </div>
+          <div class="outcomes">
+            <div class="outcome">
+              <div class="stat">~50%</div>
+              <div class="label">Jobs auto-cleared as Pass (by job count) after full segment review</div>
+            </div>
+            <div class="outcome">
+              <div class="stat">~90%</div>
+              <div class="label">Source words still need human finish — Hold jobs carry the volume</div>
+            </div>
+            <div class="outcome">
+              <div class="stat">100</div>
+              <div class="label">Only score = 100 + hard gates = Pass; anything less stays Hold</div>
+            </div>
+            <div class="outcome">
+              <div class="stat">15–20 min</div>
+              <div class="label">Approx. saved per daily batch on Pass work (order-of-magnitude)</div>
+            </div>
+          </div>
+          <p class="note">Based on ~23 production batches (May–July 2026). Typical batch ~10–15 jobs. Not a review-elimination tool — a triage and consistency layer.</p>
         </div>
-        <div class="outcomes">
-          <div class="outcome">
-            <div class="stat">~50%</div>
-            <div class="label">Jobs auto-cleared as Pass (by job count) after full segment review</div>
-          </div>
-          <div class="outcome">
-            <div class="stat">~90%</div>
-            <div class="label">Source words still need human finish — Hold jobs carry the volume</div>
-          </div>
-          <div class="outcome">
-            <div class="stat">100</div>
-            <div class="label">Only score = 100 + hard gates = Pass; anything less stays Hold</div>
-          </div>
-          <div class="outcome">
-            <div class="stat">15–20 min</div>
-            <div class="label">Approx. saved per daily batch on Pass work (order-of-magnitude)</div>
-          </div>
-        </div>
-        <p class="note">Based on ~23 production batches (May–July 2026). Typical batch ~10–15 jobs. Not a review-elimination tool — a triage and consistency layer.</p>
-      </div>
-    </section>
+      </section>
 
-    <section id="autopilot">
-      <div class="wrap skill-block">
-        <div class="section-head">
-          <p class="eyebrow">Flagship skill 1</p>
-          <h2>Product UI review autopilot</h2>
-          <p>
-            An invocation-only agent skill plus batch CLI that reviews every EN→FR Product UI
-            segment in scoped TMS jobs, scores confidence, uploads reviewed bilingual files,
-            and auto-completes only when the job is a clean Pass.
-          </p>
-        </div>
-
-        <div class="prose">
-          <p>
-            <strong>Problem:</strong> Machine translation and TMS leverage look “done,” but
-            linguistic risk lives in terminology residue, register, ICU plurals, key-path sense,
-            and cross-segment drift. Rubber-stamping high TM matches ships errors.
-          </p>
-          <p>
-            <strong>Solution:</strong> Treat the agent as a final quality gate. Review every
-            segment (including 100% and locked). Enforce glossary locks and typography.
-            Complete only when score is 100 and automated gates pass; otherwise Hold with a
-            pre-reviewed file and an explicit reason trail.
-          </p>
-        </div>
-
-        <div class="diagram" aria-label="Autopilot overview flowchart">
-          <pre class="mermaid">
+      <section class="slide" id="slide-autopilot" data-label="Autopilot" aria-label="Product UI review autopilot overview">
+        <div class="wrap slide-inner align-start skill-block">
+          <div class="section-head">
+            <p class="eyebrow">Flagship skill 1 · overview</p>
+            <h2>Product UI review autopilot</h2>
+            <p>
+              An invocation-only agent skill plus batch CLI that reviews every EN→FR Product UI
+              segment in scoped TMS jobs, scores confidence, uploads reviewed bilingual files,
+              and auto-completes only when the job is a clean Pass.
+            </p>
+          </div>
+          <div class="prose">
+            <p>
+              <strong>Problem:</strong> Machine translation and TMS leverage look “done,” but
+              linguistic risk lives in terminology residue, register, ICU plurals, key-path sense,
+              and cross-segment drift. Rubber-stamping high TM matches ships errors.
+            </p>
+            <p>
+              <strong>Solution:</strong> Treat the agent as a final quality gate. Review every
+              segment (including 100% and locked). Enforce glossary locks and typography.
+              Complete only when score is 100 and automated gates pass; otherwise Hold with a
+              pre-reviewed file and an explicit reason trail.
+            </p>
+          </div>
+          <div class="diagram" aria-label="Autopilot overview flowchart">
+            <pre class="mermaid">
 flowchart TD
   start[Select scoped TMS jobs] --> preflight[Preflight and download bilingual baseline]
   preflight --> audit[Job-wide terminology audit]
@@ -141,121 +143,126 @@ flowchart TD
   report --> next{More jobs?}
   next -->|Yes| preflight
   next -->|No| endNode[Batch complete]
-          </pre>
+            </pre>
+          </div>
         </div>
+      </section>
 
-        <h3>Pass vs Hold</h3>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Decision</th>
-                <th>Conditions</th>
-                <th>What happens</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><span class="badge badge-pass">Pass</span></td>
-                <td>Score = 100 · every segment unchanged or typography-only · all hard gates pass</td>
-                <td>Upload → confirm segments → job completed → TM write via TMS confirmation path</td>
-              </tr>
-              <tr>
-                <td><span class="badge badge-hold">Hold</span></td>
-                <td>Score &lt; 100 · any substantive edit or human flag · any gate failure · upload/confirm failure</td>
-                <td>Upload reviewed file only · marked for human finish · no auto-complete</td>
-              </tr>
-            </tbody>
-          </table>
+      <section class="slide" id="slide-autopilot-details" data-label="Autopilot details" aria-label="Autopilot Pass Hold and file inventory">
+        <div class="wrap slide-inner align-start skill-block">
+          <div class="section-head">
+            <p class="eyebrow">Flagship skill 1 · details</p>
+            <h2>Pass vs Hold and system inventory</h2>
+          </div>
+          <h3>Pass vs Hold</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Decision</th>
+                  <th>Conditions</th>
+                  <th>What happens</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="badge badge-pass">Pass</span></td>
+                  <td>Score = 100 · every segment unchanged or typography-only · all hard gates pass</td>
+                  <td>Upload → confirm segments → job completed → TM write via TMS confirmation path</td>
+                </tr>
+                <tr>
+                  <td><span class="badge badge-hold">Hold</span></td>
+                  <td>Score &lt; 100 · any substantive edit or human flag · any gate failure · upload/confirm failure</td>
+                  <td>Upload reviewed file only · marked for human finish · no auto-complete</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h3>System file inventory</h3>
+          <p class="prose" style="margin-bottom:0.5rem">Roles of the components — not the private source tree.</p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Component</th>
+                  <th>Role</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Agent skill definition</td>
+                  <td>Pass/Hold policy, fixed job scope, reviewer stance, hard stops, batch order</td>
+                </tr>
+                <tr>
+                  <td>Shared glossary / TM ritual</td>
+                  <td>Read-only termbase + product TM lookup before composing or accepting French</td>
+                </tr>
+                <tr>
+                  <td>Locale style guide</td>
+                  <td>Register, UI tone, typography, glossary/TM precedence</td>
+                </tr>
+                <tr>
+                  <td>Error-pattern checklist</td>
+                  <td>Concrete bad→good patterns from human review (false friends, calques, term locks)</td>
+                </tr>
+                <tr>
+                  <td>Scope config</td>
+                  <td>Workflow step, locales, acceptance status, reporting target</td>
+                </tr>
+                <tr>
+                  <td>Batch orchestrator CLI</td>
+                  <td>Init → validate → review artifacts → score → upload → deliver → report sync</td>
+                </tr>
+                <tr>
+                  <td>Glossary / residue gates</td>
+                  <td>Hard fail on forbidden EN residue, audit mismatches, empty targets, shallow audits</td>
+                </tr>
+                <tr>
+                  <td>Typography sweep</td>
+                  <td>French NBSP before <code>: ; ! ? %</code>, typographic apostrophes, structural cleanup</td>
+                </tr>
+                <tr>
+                  <td>Auth helper</td>
+                  <td>TMS auth with secrets kept outside the skill pack</td>
+                </tr>
+                <tr>
+                  <td>Bilingual patch helper</td>
+                  <td>Safe target-only edits for reviewed MXLIFF uploads</td>
+                </tr>
+                <tr>
+                  <td>Queue reporting helpers</td>
+                  <td>Batch rows for Pass/Hold, scores, leverage notes, termbase-gap alerts</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
+      </section>
 
-        <h3>System file inventory</h3>
-        <p class="prose" style="margin-bottom:0.75rem">Roles of the components — not the private source tree.</p>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Component</th>
-                <th>Role</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Agent skill definition</td>
-                <td>Pass/Hold policy, fixed job scope, reviewer stance, hard stops, batch order</td>
-              </tr>
-              <tr>
-                <td>Shared glossary / TM ritual</td>
-                <td>Read-only termbase + product TM lookup before composing or accepting French</td>
-              </tr>
-              <tr>
-                <td>Locale style guide</td>
-                <td>Register, UI tone, typography, glossary/TM precedence</td>
-              </tr>
-              <tr>
-                <td>Error-pattern checklist</td>
-                <td>Concrete bad→good patterns from human review (false friends, calques, term locks)</td>
-              </tr>
-              <tr>
-                <td>Scope config</td>
-                <td>Workflow step, locales, acceptance status, reporting target</td>
-              </tr>
-              <tr>
-                <td>Batch orchestrator CLI</td>
-                <td>Init → validate → review artifacts → score → upload → deliver → report sync</td>
-              </tr>
-              <tr>
-                <td>Glossary / residue gates</td>
-                <td>Hard fail on forbidden EN residue, audit mismatches, empty targets, shallow audits</td>
-              </tr>
-              <tr>
-                <td>Typography sweep</td>
-                <td>French NBSP before <code>: ; ! ? %</code>, typographic apostrophes, structural cleanup</td>
-              </tr>
-              <tr>
-                <td>Auth helper</td>
-                <td>TMS auth with secrets kept outside the skill pack</td>
-              </tr>
-              <tr>
-                <td>Bilingual patch helper</td>
-                <td>Safe target-only edits for reviewed MXLIFF uploads</td>
-              </tr>
-              <tr>
-                <td>Queue reporting helpers</td>
-                <td>Batch rows for Pass/Hold, scores, leverage notes, termbase-gap alerts</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <section id="terminology">
-      <div class="wrap skill-block">
-        <div class="section-head">
-          <p class="eyebrow">Flagship skill 2</p>
-          <h2>French terminology lookup</h2>
-          <p>
-            A governed research workflow: company termbase first, then official portals and
-            competitor UIs, then an interactive decision to create or update glossary entries —
-            including FR term notes that disambiguate sense for MT and LLMs.
-          </p>
-        </div>
-
-        <div class="prose">
-          <p>
-            <strong>Problem:</strong> Ad-hoc “how do we say X?” answers drift. Without evidence
-            and notes, the next MT/LLM run reintroduces the wrong sense.
-          </p>
-          <p>
-            <strong>Solution:</strong> A skill that forces termbase-first lookup, optional
-            external validation, comparison tables, and explicit human decisions before any
-            glossary write — with note fields aimed at machine consumers, not just linguists.
-          </p>
-        </div>
-
-        <div class="diagram" aria-label="Terminology lookup flowchart">
-          <pre class="mermaid">
+      <section class="slide" id="slide-terminology" data-label="Terminology" aria-label="French terminology lookup overview">
+        <div class="wrap slide-inner align-start skill-block">
+          <div class="section-head">
+            <p class="eyebrow">Flagship skill 2 · overview</p>
+            <h2>French terminology lookup</h2>
+            <p>
+              A governed research workflow: company termbase first, then official portals and
+              competitor UIs, then an interactive decision to create or update glossary entries —
+              including FR term notes that disambiguate sense for MT and LLMs.
+            </p>
+          </div>
+          <div class="prose">
+            <p>
+              <strong>Problem:</strong> Ad-hoc “how do we say X?” answers drift. Without evidence
+              and notes, the next MT/LLM run reintroduces the wrong sense.
+            </p>
+            <p>
+              <strong>Solution:</strong> A skill that forces termbase-first lookup, optional
+              external validation, comparison tables, and explicit human decisions before any
+              glossary write — with note fields aimed at machine consumers, not just linguists.
+            </p>
+          </div>
+          <div class="diagram" aria-label="Terminology lookup flowchart">
+            <pre class="mermaid">
 flowchart TD
   q[EN term question] --> tb[Search company termbase]
   tb -->|FR match exists| expand{Expand to portals and competitors?}
@@ -268,234 +275,349 @@ flowchart TD
   note --> propose[Confirm entry proposal]
   propose --> write[Write termbase entry]
   decide -->|Skip| stop[Stop with recommendation only]
-          </pre>
-        </div>
-
-        <h3>Decision points built into the skill</h3>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Decision</th>
-                <th>When</th>
-                <th>User chooses</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><code>expand_search</code></td>
-                <td>Termbase already has a French match</td>
-                <td>Stop with glossary-only answer, or run full portal + competitor research</td>
-              </tr>
-              <tr>
-                <td><code>glossary_and_fr_term</code></td>
-                <td>After evidence + recommendation</td>
-                <td>Create with recommended FR, create with another option, skip, or bookmark</td>
-              </tr>
-              <tr>
-                <td><code>regional_approval</code></td>
-                <td>Term needs regional validation before create</td>
-                <td>Wait for validation channel, or create now</td>
-              </tr>
-              <tr>
-                <td><code>termbase_entry_proposal</code></td>
-                <td>After draft entry + optional FR note</td>
-                <td>Confirm, edit note, or cancel — before any write</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <h3>Workflow inventory</h3>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Step</th>
-                <th>What it does</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Termbase search</td>
-                <td>Exact vs partial matches; flag note-risk neighbors (same lemma, different sense)</td>
-              </tr>
-              <tr>
-                <td>Concept metadata</td>
-                <td>Pull definition, domain, and concept notes — not term strings alone</td>
-              </tr>
-              <tr>
-                <td>Portal research</td>
-                <td>Official terminology portals for the target locale</td>
-              </tr>
-              <tr>
-                <td>Competitor UI check</td>
-                <td>How peer products render the same concept in French UI</td>
-              </tr>
-              <tr>
-                <td>Comparison deliverable</td>
-                <td>Options table with verdict column for scannable LM decisions</td>
-              </tr>
-              <tr>
-                <td>FR term Note</td>
-                <td>Disambiguation text written for MT/LLM consumers, not only humans</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <section id="also">
-      <div class="wrap">
-        <div class="section-head">
-          <p class="eyebrow">Breadth</p>
-          <h2>Also built</h2>
-          <p>Same operating idea — encode Loc policy into agent skills — across channels.</p>
-        </div>
-        <div class="also-grid">
-          <article class="also-item">
-            <h3>In-place design &amp; board translation</h3>
-            <p>EN→FR on collaboration boards and design tools via APIs, preserving formatting; glossary + TM + style guide.</p>
-          </article>
-          <article class="also-item">
-            <h3>TM alignment pipelines</h3>
-            <p>Bilingual assets → sentence-level TMX → upsert into a dedicated working TM without duplicating EN keepers.</p>
-          </article>
-          <article class="also-item">
-            <h3>CMS / GTC triage automation</h3>
-            <p>Discovery QA and optional safe auto-complete for content jobs at quality-check steps.</p>
-          </article>
-          <article class="also-item">
-            <h3>Email &amp; webpage MXLIFF overwrite</h3>
-            <p>Tag-aware bilingual round-trips at the right workflow step; URL and liquid-literal safeguards.</p>
-          </article>
-          <article class="also-item">
-            <h3>Subtitles (two modes)</h3>
-            <p>Strict cue parity for 1:1 alignment, or merge/split within English time windows for spoken French.</p>
-          </article>
-          <article class="also-item">
-            <h3>Avatar / transcript review</h3>
-            <p>French .srt checked against English with glossary, cue length, and spoken-register rules.</p>
-          </article>
-          <article class="also-item">
-            <h3>TM leverage analysis</h3>
-            <p>Pre-flight wordcount by match band across Marketing / working / Product TMs — read-only.</p>
-          </article>
-          <article class="also-item">
-            <h3>Scheduled Loc ops</h3>
-            <p>Queue checks, product-update digests, and monthly termbase gap scans as always-on agent rules.</p>
-          </article>
-          <article class="also-item">
-            <h3>Living FR quality system</h3>
-            <p>Style guide + error checklist updated from real review failures — the authority layer every skill must follow.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="faq">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>FAQ</h2>
-          <p>Questions Localization leaders usually ask about the UI autopilot — plus terminology governance.</p>
-        </div>
-        <div class="faq">
-          <details>
-            <summary>Does this replace human review?</summary>
-            <div class="answer">
-              <p>No. It is a triage layer. Pass jobs leave the linguist’s plate; Hold jobs still need a human and typically carry ~90% of source words in a batch.</p>
-            </div>
-          </details>
-          <details>
-            <summary>What makes a job Pass vs Hold?</summary>
-            <div class="answer">
-              <p>Pass requires score = 100, only unchanged or typography-only segment dispositions, and every automated hard gate green. Any substantive edit, human flag, or gate failure → Hold.</p>
-            </div>
-          </details>
-          <details>
-            <summary>Is the confidence score just TM leverage?</summary>
-            <div class="answer">
-              <p>No. Score is computed on the <em>final reviewed</em> bilingual output after per-segment review — not on raw MT and not on TMS match %. Pass jobs are not filtered to “100% leverage only”; every segment is reviewed, including locked and perfect matches.</p>
-            </div>
-          </details>
-          <details>
-            <summary>What kinds of edits does the agent make?</summary>
-            <div class="answer">
-              <p>Purposeful quality fixes: glossary compliance, UI register/verb form, French typography (NBSP, apostrophes), ICU metadata cleanup, cross-segment consistency, and key-path sense. If a segment is already accurate and compliant, it stays unchanged — no cosmetic rewrites.</p>
-            </div>
-          </details>
-          <details>
-            <summary>How was the reviewer role defined?</summary>
-            <div class="answer">
-              <p>Final linguistic gate before Product UI ships — not a rubber stamp on TM scores. Review every segment; prefer key path as primary context; flag rather than guess when evidence is insufficient. CLI gates enforce the prose rules.</p>
-            </div>
-          </details>
-          <details>
-            <summary>Is cross-segment consistency 100% guaranteed?</summary>
-            <div class="answer">
-              <p>No — and the skill says so. It strongly reduces drift inside a job and improves reuse across a batch (oldest-first + TM write on Pass), but Hold jobs, separate runs, and legitimately different senses for the same English can still diverge.</p>
-            </div>
-          </details>
-          <details>
-            <summary>How is the score calculated (high level)?</summary>
-            <div class="answer">
-              <p>Start at 100; apply penalties for substantive edits and human flags; any hard-gate failure caps the score at 99 and blocks Pass. Typography-only fixes are not penalized. A numeric 100 alone is not enough if dispositions are not all Pass-equivalent.</p>
-            </div>
-          </details>
-          <details>
-            <summary>What references does the agent use?</summary>
-            <div class="answer">
-              <ul>
-                <li>Company termbase (glossary)</li>
-                <li>Locale style guide and error-pattern checklist</li>
-                <li>Product translation memory (read-only during review)</li>
-                <li>i18n key path and namespace conventions</li>
-                <li>Job-local bilingual baseline and terminology audit artifacts</li>
-              </ul>
-              <p>Termbase and style guide outrank TM when they conflict. The agent does not invent product facts or write TM directly outside the TMS confirmation path.</p>
-            </div>
-          </details>
-          <details>
-            <summary>Why put decision points in terminology lookup?</summary>
-            <div class="answer">
-              <p>Glossary writes are governance events. The skill stops for expand-search, create-or-skip, regional validation when needed, and final entry confirmation — so an LM stays in control while the agent does the research.</p>
-            </div>
-          </details>
-          <details>
-            <summary>What is an FR term Note for?</summary>
-            <div class="answer">
-              <p>To disambiguate sense for MT and LLM pipelines (and future reviewers) — especially when neighboring concepts share vocabulary but not meaning. Notes are part of making the termbase machine-usable, not only human-readable.</p>
-            </div>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="wrap">
-        <div class="cta-band">
-          <h2>Open to Localization leadership conversations</h2>
-          <p>
-            If you lead Loc and want AI that respects terminology governance — not demos that skip the hard parts —
-            I’d like to talk.
-          </p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="https://www.linkedin.com/in/frenchlanguagemanager" rel="noopener noreferrer" target="_blank">linkedin.com/in/frenchlanguagemanager</a>
-            <a class="btn btn-secondary" href="mailto:christelledessens@gmail.com">christelledessens@gmail.com</a>
+            </pre>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <p>© <span id="year"></span> Christelle Dessens. Public portfolio page only — skill source and credentials are not published here.</p>
+      <section class="slide" id="slide-terminology-details" data-label="Terminology details" aria-label="Terminology decision points and workflow">
+        <div class="wrap slide-inner align-start skill-block">
+          <div class="section-head">
+            <p class="eyebrow">Flagship skill 2 · details</p>
+            <h2>Decision points and workflow inventory</h2>
+          </div>
+          <h3>Decision points built into the skill</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Decision</th>
+                  <th>When</th>
+                  <th>User chooses</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>expand_search</code></td>
+                  <td>Termbase already has a French match</td>
+                  <td>Stop with glossary-only answer, or run full portal + competitor research</td>
+                </tr>
+                <tr>
+                  <td><code>glossary_and_fr_term</code></td>
+                  <td>After evidence + recommendation</td>
+                  <td>Create with recommended FR, create with another option, skip, or bookmark</td>
+                </tr>
+                <tr>
+                  <td><code>regional_approval</code></td>
+                  <td>Term needs regional validation before create</td>
+                  <td>Wait for validation channel, or create now</td>
+                </tr>
+                <tr>
+                  <td><code>termbase_entry_proposal</code></td>
+                  <td>After draft entry + optional FR note</td>
+                  <td>Confirm, edit note, or cancel — before any write</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h3>Workflow inventory</h3>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Step</th>
+                  <th>What it does</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Termbase search</td>
+                  <td>Exact vs partial matches; flag note-risk neighbors (same lemma, different sense)</td>
+                </tr>
+                <tr>
+                  <td>Concept metadata</td>
+                  <td>Pull definition, domain, and concept notes — not term strings alone</td>
+                </tr>
+                <tr>
+                  <td>Portal research</td>
+                  <td>Official terminology portals for the target locale</td>
+                </tr>
+                <tr>
+                  <td>Competitor UI check</td>
+                  <td>How peer products render the same concept in French UI</td>
+                </tr>
+                <tr>
+                  <td>Comparison deliverable</td>
+                  <td>Options table with verdict column for scannable LM decisions</td>
+                </tr>
+                <tr>
+                  <td>FR term Note</td>
+                  <td>Disambiguation text written for MT/LLM consumers, not only humans</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" id="slide-also" data-label="Also built" aria-label="Also built">
+        <div class="wrap slide-inner align-start">
+          <div class="section-head">
+            <p class="eyebrow">Breadth</p>
+            <h2>Also built</h2>
+            <p>Same operating idea — encode Loc policy into agent skills — across channels.</p>
+          </div>
+          <div class="also-grid">
+            <article class="also-item">
+              <h3>In-place design &amp; board translation</h3>
+              <p>EN→FR on collaboration boards and design tools via APIs, preserving formatting; glossary + TM + style guide.</p>
+            </article>
+            <article class="also-item">
+              <h3>TM alignment pipelines</h3>
+              <p>Bilingual assets → sentence-level TMX → upsert into a dedicated working TM without duplicating EN keepers.</p>
+            </article>
+            <article class="also-item">
+              <h3>CMS / GTC triage automation</h3>
+              <p>Discovery QA and optional safe auto-complete for content jobs at quality-check steps.</p>
+            </article>
+            <article class="also-item">
+              <h3>Email &amp; webpage MXLIFF overwrite</h3>
+              <p>Tag-aware bilingual round-trips at the right workflow step; URL and liquid-literal safeguards.</p>
+            </article>
+            <article class="also-item">
+              <h3>Subtitles (two modes)</h3>
+              <p>Strict cue parity for 1:1 alignment, or merge/split within English time windows for spoken French.</p>
+            </article>
+            <article class="also-item">
+              <h3>Avatar / transcript review</h3>
+              <p>French .srt checked against English with glossary, cue length, and spoken-register rules.</p>
+            </article>
+            <article class="also-item">
+              <h3>TM leverage analysis</h3>
+              <p>Pre-flight wordcount by match band across Marketing / working / Product TMs — read-only.</p>
+            </article>
+            <article class="also-item">
+              <h3>Scheduled Loc ops</h3>
+              <p>Queue checks, product-update digests, and monthly termbase gap scans as always-on agent rules.</p>
+            </article>
+            <article class="also-item">
+              <h3>Living FR quality system</h3>
+              <p>Style guide + error checklist updated from real review failures — the authority layer every skill must follow.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" id="slide-faq" data-label="FAQ" aria-label="FAQ">
+        <div class="wrap slide-inner align-start">
+          <div class="section-head">
+            <h2>FAQ</h2>
+            <p>Questions Localization leaders usually ask about the UI autopilot — plus terminology governance.</p>
+          </div>
+          <div class="faq">
+            <details>
+              <summary>Does this replace human review?</summary>
+              <div class="answer">
+                <p>No. It is a triage layer. Pass jobs leave the linguist’s plate; Hold jobs still need a human and typically carry ~90% of source words in a batch.</p>
+              </div>
+            </details>
+            <details>
+              <summary>What makes a job Pass vs Hold?</summary>
+              <div class="answer">
+                <p>Pass requires score = 100, only unchanged or typography-only segment dispositions, and every automated hard gate green. Any substantive edit, human flag, or gate failure → Hold.</p>
+              </div>
+            </details>
+            <details>
+              <summary>Is the confidence score just TM leverage?</summary>
+              <div class="answer">
+                <p>No. Score is computed on the <em>final reviewed</em> bilingual output after per-segment review — not on raw MT and not on TMS match %. Pass jobs are not filtered to “100% leverage only”; every segment is reviewed, including locked and perfect matches.</p>
+              </div>
+            </details>
+            <details>
+              <summary>What kinds of edits does the agent make?</summary>
+              <div class="answer">
+                <p>Purposeful quality fixes: glossary compliance, UI register/verb form, French typography (NBSP, apostrophes), ICU metadata cleanup, cross-segment consistency, and key-path sense. If a segment is already accurate and compliant, it stays unchanged — no cosmetic rewrites.</p>
+              </div>
+            </details>
+            <details>
+              <summary>How was the reviewer role defined?</summary>
+              <div class="answer">
+                <p>Final linguistic gate before Product UI ships — not a rubber stamp on TM scores. Review every segment; prefer key path as primary context; flag rather than guess when evidence is insufficient. CLI gates enforce the prose rules.</p>
+              </div>
+            </details>
+            <details>
+              <summary>Is cross-segment consistency 100% guaranteed?</summary>
+              <div class="answer">
+                <p>No — and the skill says so. It strongly reduces drift inside a job and improves reuse across a batch (oldest-first + TM write on Pass), but Hold jobs, separate runs, and legitimately different senses for the same English can still diverge.</p>
+              </div>
+            </details>
+            <details>
+              <summary>How is the score calculated (high level)?</summary>
+              <div class="answer">
+                <p>Start at 100; apply penalties for substantive edits and human flags; any hard-gate failure caps the score at 99 and blocks Pass. Typography-only fixes are not penalized. A numeric 100 alone is not enough if dispositions are not all Pass-equivalent.</p>
+              </div>
+            </details>
+            <details>
+              <summary>What references does the agent use?</summary>
+              <div class="answer">
+                <ul>
+                  <li>Company termbase (glossary)</li>
+                  <li>Locale style guide and error-pattern checklist</li>
+                  <li>Product translation memory (read-only during review)</li>
+                  <li>i18n key path and namespace conventions</li>
+                  <li>Job-local bilingual baseline and terminology audit artifacts</li>
+                </ul>
+                <p>Termbase and style guide outrank TM when they conflict. The agent does not invent product facts or write TM directly outside the TMS confirmation path.</p>
+              </div>
+            </details>
+            <details>
+              <summary>Why put decision points in terminology lookup?</summary>
+              <div class="answer">
+                <p>Glossary writes are governance events. The skill stops for expand-search, create-or-skip, regional validation when needed, and final entry confirmation — so an LM stays in control while the agent does the research.</p>
+              </div>
+            </details>
+            <details>
+              <summary>What is an FR term Note for?</summary>
+              <div class="answer">
+                <p>To disambiguate sense for MT and LLM pipelines (and future reviewers) — especially when neighboring concepts share vocabulary but not meaning. Notes are part of making the termbase machine-usable, not only human-readable.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="slide" id="slide-contact" data-label="Contact" aria-label="Contact">
+        <div class="wrap slide-inner">
+          <div class="cta-band">
+            <h2>Open to Localization leadership conversations</h2>
+            <p>
+              If you lead Loc and want AI that respects terminology governance — not demos that skip the hard parts —
+              I’d like to talk.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="https://www.linkedin.com/in/frenchlanguagemanager" rel="noopener noreferrer" target="_blank">linkedin.com/in/frenchlanguagemanager</a>
+              <a class="btn btn-secondary" href="mailto:christelledessens@gmail.com">christelledessens@gmail.com</a>
+            </div>
+          </div>
+          <p class="slide-footer">© <span id="year"></span> Christelle Dessens. Public portfolio page only — skill source and credentials are not published here.</p>
+        </div>
+      </section>
+    </main>
+
+    <div class="deck-chrome" aria-label="Slide navigation">
+      <button class="nav-arrow" id="prevBtn" type="button" aria-label="Previous slide">‹</button>
+      <div class="slide-dots" id="dots" role="tablist" aria-label="Slides"></div>
+      <button class="nav-arrow" id="nextBtn" type="button" aria-label="Next slide">›</button>
+      <div class="slide-status" id="status" aria-live="polite"></div>
     </div>
-  </footer>
+  </div>
+
   <script>
-    document.getElementById("year").textContent = String(new Date().getFullYear());
+    (function () {
+      const deck = document.getElementById("deck");
+      const slides = Array.from(deck.querySelectorAll(".slide"));
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
+      const dots = document.getElementById("dots");
+      const status = document.getElementById("status");
+      const year = document.getElementById("year");
+      if (year) year.textContent = String(new Date().getFullYear());
+
+      let index = 0;
+      let ignoreScroll = false;
+
+      slides.forEach((slide, i) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.setAttribute("role", "tab");
+        btn.setAttribute("aria-label", slide.dataset.label || ("Slide " + (i + 1)));
+        btn.addEventListener("click", () => goTo(i));
+        dots.appendChild(btn);
+      });
+
+      function goTo(i, behavior) {
+        index = Math.max(0, Math.min(slides.length - 1, i));
+        ignoreScroll = true;
+        slides[index].scrollIntoView({ behavior: behavior || "smooth", inline: "start", block: "nearest" });
+        updateChrome();
+        window.setTimeout(() => { ignoreScroll = false; }, 450);
+      }
+
+      function updateChrome() {
+        prevBtn.disabled = index <= 0;
+        nextBtn.disabled = index >= slides.length - 1;
+        Array.from(dots.children).forEach((dot, i) => {
+          if (i === index) dot.setAttribute("aria-current", "true");
+          else dot.removeAttribute("aria-current");
+        });
+        status.textContent = (index + 1) + " / " + slides.length;
+        document.querySelectorAll(".nav-links a[data-slide]").forEach((link) => {
+          const target = Number(link.getAttribute("data-slide"));
+          link.classList.toggle("is-active", target === index || (target === 2 && (index === 2 || index === 3)) || (target === 4 && (index === 4 || index === 5)));
+        });
+        history.replaceState(null, "", "#" + slides[index].id);
+      }
+
+      function nearestIndex() {
+        const left = deck.scrollLeft;
+        let best = 0;
+        let bestDist = Infinity;
+        slides.forEach((slide, i) => {
+          const dist = Math.abs(slide.offsetLeft - left);
+          if (dist < bestDist) {
+            bestDist = dist;
+            best = i;
+          }
+        });
+        return best;
+      }
+
+      prevBtn.addEventListener("click", () => goTo(index - 1));
+      nextBtn.addEventListener("click", () => goTo(index + 1));
+
+      document.querySelectorAll("[data-goto]").forEach((el) => {
+        el.addEventListener("click", () => goTo(Number(el.getAttribute("data-goto"))));
+      });
+
+      document.querySelectorAll("[data-slide]").forEach((el) => {
+        el.addEventListener("click", (e) => {
+          e.preventDefault();
+          goTo(Number(el.getAttribute("data-slide")));
+        });
+      });
+
+      deck.addEventListener("scroll", () => {
+        if (ignoreScroll) return;
+        const next = nearestIndex();
+        if (next !== index) {
+          index = next;
+          updateChrome();
+        }
+      }, { passive: true });
+
+      window.addEventListener("keydown", (e) => {
+        const tag = (e.target && e.target.tagName) || "";
+        if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT") return;
+        if (e.key === "ArrowRight" || e.key === "PageDown") {
+          e.preventDefault();
+          goTo(index + 1);
+        } else if (e.key === "ArrowLeft" || e.key === "PageUp") {
+          e.preventDefault();
+          goTo(index - 1);
+        } else if (e.key === "Home") {
+          e.preventDefault();
+          goTo(0);
+        } else if (e.key === "End") {
+          e.preventDefault();
+          goTo(slides.length - 1);
+        }
+      });
+
+      const hash = window.location.hash.replace(/^#/, "");
+      const fromHash = slides.findIndex((s) => s.id === hash);
+      goTo(fromHash >= 0 ? fromHash : 0, "auto");
+      deck.focus({ preventScroll: true });
+    })();
   </script>
 </body>
 </html>
