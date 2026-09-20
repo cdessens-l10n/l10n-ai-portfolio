@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Christelle Dessens — AI skills for language management</title>
+  <title>Christelle Dessens — AI workflows for language management</title>
   <meta name="description" content="Portfolio of AI-encoded localization workflows: Product UI review autopilot and terminology governance for Localization leaders.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="AI workflows for language management">
@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;550;650;700&family=Fraunces:opsz,wght@9..144,500;9..144,650&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=lede1">
+  <link rel="stylesheet" href="styles.css?v=lede2">
   <script type="module">
     import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
     mermaid.initialize({
@@ -44,10 +44,10 @@
       <a class="brand" href="#slide-intro" data-slide="0">Christelle Dessens</a>
                         <ul class="nav-links">
         <li><a href="#slide-intro" data-slide="0">Intro</a></li>
-        <li><a href="#slide-autopilot" data-slide="1">UI review skill</a></li>
-        <li><a href="#slide-terminology" data-slide="3">Terminology management skill</a></li>
+        <li><a href="#slide-autopilot" data-slide="1">UI review workflow</a></li>
+        <li><a href="#slide-terminology" data-slide="3">Terminology management workflow</a></li>
         <li><a href="#slide-faq" data-slide="5">FAQ</a></li>
-        <li><a href="#slide-also" data-slide="6">Other skills</a></li>
+        <li><a href="#slide-also" data-slide="6">Other workflows</a></li>
       </ul>
     </div>
   </header>
@@ -58,16 +58,15 @@
         <div class="wrap slide-inner">
           <div class="intro-stack">
             <p class="eyebrow">Localization · AI workflows · French</p>
-            <h1>AI skills for language management</h1>
-            <p class="context-line"><strong>Context:</strong> Product UI localization · EN→FR · enterprise TMS + termbase + TM · AI agent as execution layer</p>
-            <p class="lede">Brief overview of 2 skills I designed to speed up my daily work as French Language Manager:</p>
+            <h1>AI workflows for language management</h1>
+            <p class="lede">Brief overview of 2 workflows I designed to speed up my daily work as French Language Manager:</p>
             <ul class="skill-jump-list">
-              <li><a href="#slide-autopilot" data-slide="1">UI review skill</a></li>
-              <li><a href="#slide-terminology" data-slide="3">Terminology management skill</a></li>
+              <li><a href="#slide-autopilot" data-slide="1">UI review workflow</a></li>
+              <li><a href="#slide-terminology" data-slide="3">Terminology management workflow</a></li>
             </ul>
 
-            <div class="intro-metrics" aria-label="UI review skill outcomes">
-              <p class="metrics-label">Improvements at a glance — UI review skill</p>
+            <div class="intro-metrics" aria-label="UI review workflow outcomes">
+              <p class="metrics-label">Outcomes at a glance — UI review workflow</p>
               <div class="outcomes outcomes-compact">
                 <div class="outcome">
                   <div class="stat">~60%</div>
@@ -78,15 +77,11 @@
                   <div class="label">Source words still need human finish on Hold jobs</div>
                 </div>
                 <div class="outcome">
-                  <div class="stat">100</div>
-                  <div class="label">Only score = 100 + hard gates = Pass</div>
-                </div>
-                <div class="outcome">
                   <div class="stat">~25%</div>
                   <div class="label">Approx. time saved vs a full human review of a typical daily batch</div>
                 </div>
               </div>
-              <p class="note">Data over daily batches: 1–18 Sep 2026 · 254 jobs · triage layer, not review elimination</p>
+              <p class="note">Based on data from daily batches in Sep 2026 · triage layer, not review elimination</p>
             </div>
 
             <div class="cta-row">
@@ -101,10 +96,10 @@
 <section class="slide" id="slide-autopilot" data-label="Autopilot" aria-label="Product UI review with confidence scores">
         <div class="wrap slide-inner align-start skill-block">
           <div class="section-head">
-            <p class="eyebrow">Flagship skill 1 · overview</p>
+            <p class="eyebrow">Workflow 1 · overview</p>
             <h2>Product UI review with confidence scores</h2>
             <p>
-              An agent skill plus batch CLI that reviews every EN→FR Product UI
+              An AI workflow plus batch CLI that reviews every EN→FR Product UI
               segment in scoped TMS jobs, scores confidence, uploads reviewed bilingual files,
               and auto-completes only when the job is a clean Pass.
             </p>
@@ -139,7 +134,7 @@ flowchart TD
 <section class="slide" id="slide-autopilot-details" data-label="Autopilot details" aria-label="Autopilot Pass Hold and file inventory">
         <div class="wrap slide-inner align-start skill-block">
           <div class="section-head">
-            <p class="eyebrow">Flagship skill 1 · details</p>
+            <p class="eyebrow">Workflow 1 · details</p>
             <h2>Pass vs Hold and system inventory</h2>
           </div>
           <h3>Pass vs Hold</h3>
@@ -178,7 +173,7 @@ flowchart TD
               </thead>
               <tbody>
                 <tr>
-                  <td>Agent skill definition</td>
+                  <td>AI workflow definition</td>
                   <td>Pass/Hold policy, fixed job scope, reviewer stance, hard stops, batch order</td>
                 </tr>
                 <tr>
@@ -211,7 +206,7 @@ flowchart TD
                 </tr>
                 <tr>
                   <td>Auth helper</td>
-                  <td>TMS auth with secrets kept outside the skill pack</td>
+                  <td>TMS auth with secrets kept outside the workflow pack</td>
                 </tr>
                 <tr>
                   <td>Bilingual patch helper</td>
@@ -230,7 +225,7 @@ flowchart TD
 <section class="slide" id="slide-terminology" data-label="Terminology" aria-label="French terminology lookup overview">
         <div class="wrap slide-inner align-start skill-block">
           <div class="section-head">
-            <p class="eyebrow">Flagship skill 2 · overview</p>
+            <p class="eyebrow">Workflow 2 · overview</p>
             <h2>French terminology lookup</h2>
             <p>
               A governed research workflow: definition generated, company termbase and TMs checked, then official portals and
@@ -243,7 +238,7 @@ flowchart TD
               <strong>Problem:</strong> Thorough terminology research can be very time-consuming, querying various sources of information before making a decision. Manual entry into termbase done by humans is error-prone. Global termbase management via exports or manual editing are time-consuming and error-prone.
             </p>
             <p>
-              <strong>Solution:</strong> A skill that defines what repeatable process to follow before entering or updating a term: what assets to check, what resources to look up and what to consider when making a decision, with tops recommendations from the agent. The decision remains human, and agent speeds up entry creation in a repeatable, error-free manner.
+              <strong>Solution:</strong> A workflow that defines what repeatable process to follow before entering or updating a term: what assets to check, what resources to look up and what to consider when making a decision, with tops recommendations from the agent. The decision remains human, and agent speeds up entry creation in a repeatable, error-free manner.
             </p>
           </div>
           <div class="diagram" aria-label="Terminology lookup flowchart">
@@ -268,10 +263,10 @@ flowchart TD
 <section class="slide" id="slide-terminology-details" data-label="Terminology details" aria-label="Terminology decision points and workflow">
         <div class="wrap slide-inner align-start skill-block">
           <div class="section-head">
-            <p class="eyebrow">Flagship skill 2 · details</p>
+            <p class="eyebrow">Workflow 2 · details</p>
             <h2>Decision points and workflow inventory</h2>
           </div>
-          <h3>Decision points built into the skill</h3>
+          <h3>Decision points built into the workflow</h3>
           <div class="table-wrap">
             <table>
               <thead>
@@ -349,7 +344,7 @@ flowchart TD
         <div class="wrap slide-inner align-start">
           <div class="section-head">
             <h2>FAQ</h2>
-            <p>Typical questions about the UI review skill.</p>
+            <p>Typical questions about the UI review workflow.</p>
           </div>
           <div class="faq">
             <details>
@@ -385,7 +380,7 @@ flowchart TD
             <details>
               <summary>Is cross-segment consistency 100% guaranteed?</summary>
               <div class="answer">
-                <p>No — and the skill says so. It strongly reduces drift inside a job and improves reuse across a batch (oldest-first + TM write on Pass), but Hold jobs, separate runs, and legitimately different senses for the same English can still diverge.</p>
+                <p>No — and the workflow says so. It strongly reduces drift inside a job and improves reuse across a batch (oldest-first + TM write on Pass), but Hold jobs, separate runs, and legitimately different senses for the same English can still diverge.</p>
               </div>
             </details>
             <details>
@@ -408,16 +403,16 @@ flowchart TD
               </div>
             </details>
           </div>
-          <p class="slide-footer">© <span id="year"></span> Christelle Dessens. Public portfolio page only — skill source and credentials are not published here.</p>
+          <p class="slide-footer">© <span id="year"></span> Christelle Dessens. Public portfolio page only — workflow source and credentials are not published here.</p>
         </div>
       </section>
 
-<section class="slide" id="slide-also" data-label="Other skills" aria-label="Other skills I built">
+<section class="slide" id="slide-also" data-label="Other workflows" aria-label="Other workflows I built">
         <div class="wrap slide-inner align-start">
           <div class="section-head">
             <p class="eyebrow">Breadth</p>
-            <h2>Other skills I built</h2>
-            <p>Same operating idea — encode Loc policy into agent skills — across channels.</p>
+            <h2>Other workflows I built</h2>
+            <p>Same operating idea — encode Loc policy into AI workflows — across channels.</p>
           </div>
           <div class="also-grid">
             <article class="also-item">
@@ -442,7 +437,7 @@ flowchart TD
             </article>
             <article class="also-item">
               <h3>Living FR quality system</h3>
-              <p>Style guide + error checklist updated from real review failures — the authority layer every skill must follow.</p>
+              <p>Style guide + error checklist updated from real review failures — the authority layer every workflow must follow.</p>
             </article>
           </div>
         </div>
