@@ -281,6 +281,60 @@ h3 {
   }
 }
 
+.intro-stack {
+  max-width: 58rem;
+}
+
+.context-line {
+  margin: 0.75rem 0 0;
+  max-width: 52rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.intro-metrics {
+  margin-top: 1.25rem;
+}
+
+.metrics-label {
+  margin: 0 0 0.55rem;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.outcomes-compact {
+  gap: 0.55rem;
+}
+
+.outcomes-compact .outcome {
+  padding: 0.75rem 0.7rem;
+}
+
+.outcomes-compact .stat {
+  font-size: 1.35rem;
+}
+
+.outcomes-compact .label {
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+.intro-metrics .note {
+  margin-top: 0.45rem;
+  font-size: 0.8rem;
+}
+
+.intro-stack .cta-row {
+  margin-top: 1.15rem;
+}
+
+.intro-stack .hint {
+  margin-top: 0.75rem;
+}
+
 .lede {
   margin: 1rem 0 0;
   max-width: 42ch;
