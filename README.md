@@ -2,7 +2,8 @@
 
 Public portfolio site for **Christelle Dessens** — Localization / AI workflow design.
 
-**Live site (after GitHub Pages is enabled):** `https://<your-username>.github.io/l10n-ai-portfolio/`
+**Live site:** https://cdessens-l10n.github.io/l10n-ai-portfolio/  
+**Repo:** https://github.com/cdessens-l10n/l10n-ai-portfolio
 
 ## What this repo is
 
