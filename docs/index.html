@@ -33,9 +33,9 @@
       <a class="brand" href="#slide-intro" data-slide="0">Christelle Dessens</a>
       <ul class="nav-links">
         <li><a href="#slide-outcomes" data-slide="1">Outcomes</a></li>
-        <li><a href="#slide-autopilot" data-slide="2">UI Autopilot</a></li>
-        <li><a href="#slide-terminology" data-slide="4">Terminology</a></li>
-        <li><a href="#slide-also" data-slide="6">Also built</a></li>
+        <li><a href="#slide-autopilot" data-slide="2">UI review skill</a></li>
+        <li><a href="#slide-terminology" data-slide="4">Terminology management skill</a></li>
+        <li><a href="#slide-also" data-slide="6">Other skills</a></li>
         <li><a href="#slide-faq" data-slide="7">FAQ</a></li>
         <li><a href="#slide-contact" data-slide="8">Contact</a></li>
       </ul>
@@ -51,9 +51,9 @@
               <p class="eyebrow">Localization · AI workflows · French</p>
               <h1>AI skills for language management</h1>
               <p class="lede">
-                I design agent skills and gated automation that turn glossaries, style guides,
-                and review policy into repeatable production systems — built for Localization
-                Managers, project leads, and Loc directors who need quality control at scale.
+                This is a brief overview of 2 skills I designed speed up my daily work as French Language Manager:
+                UI review skill
+                Terminology management skill
               </p>
               <div class="cta-row">
                 <a class="btn btn-primary" href="https://www.linkedin.com/in/frenchlanguagemanager" rel="noopener noreferrer" target="_blank">LinkedIn</a>
@@ -105,28 +105,23 @@
         </div>
       </section>
 
-      <section class="slide" id="slide-autopilot" data-label="Autopilot" aria-label="Product UI review autopilot overview">
+      <section class="slide" id="slide-autopilot" data-label="Autopilot" aria-label="Product UI review with confidence scores">
         <div class="wrap slide-inner align-start skill-block">
           <div class="section-head">
             <p class="eyebrow">Flagship skill 1 · overview</p>
-            <h2>Product UI review autopilot</h2>
+            <h2>Product UI review with confidence scores</h2>
             <p>
-              An invocation-only agent skill plus batch CLI that reviews every EN→FR Product UI
+              An agent skill plus batch CLI that reviews every EN→FR Product UI
               segment in scoped TMS jobs, scores confidence, uploads reviewed bilingual files,
               and auto-completes only when the job is a clean Pass.
             </p>
           </div>
           <div class="prose">
             <p>
-              <strong>Problem:</strong> Machine translation and TMS leverage look “done,” but
-              linguistic risk lives in terminology residue, register, ICU plurals, key-path sense,
-              and cross-segment drift. Rubber-stamping high TM matches ships errors.
+              <strong>Problem:</strong> Numerous daily jobs with very low volumes per job generating time-consuming repeated manual effort for the in-house Language Manager.
             </p>
             <p>
-              <strong>Solution:</strong> Treat the agent as a final quality gate. Review every
-              segment (including 100% and locked). Enforce glossary locks and typography.
-              Complete only when score is 100 and automated gates pass; otherwise Hold with a
-              pre-reviewed file and an explicit reason trail.
+              <strong>Solution:</strong> Rely on confidence scores after review by the agent to triage jobs still needing human review vs those that can be auto completed. Freeing up time for the Language Manager to spend more time auditing the product and less time clicking through low-volume TMS jobs.
             </p>
           </div>
           <div class="diagram" aria-label="Autopilot overview flowchart">
@@ -245,20 +240,17 @@ flowchart TD
             <p class="eyebrow">Flagship skill 2 · overview</p>
             <h2>French terminology lookup</h2>
             <p>
-              A governed research workflow: company termbase first, then official portals and
+              A governed research workflow: definition generated, company termbase and TMs checked, then official portals and
               competitor UIs, then an interactive decision to create or update glossary entries —
-              including FR term notes that disambiguate sense for MT and LLMs.
+              including FR term notes that disambiguate sense for LLMs.
             </p>
           </div>
           <div class="prose">
             <p>
-              <strong>Problem:</strong> Ad-hoc “how do we say X?” answers drift. Without evidence
-              and notes, the next MT/LLM run reintroduces the wrong sense.
+              <strong>Problem:</strong> Thorough terminology research can be very time-consuming, querying various sources of information before making a decision. Manual entry into termbase done by humans is error-prone. Global termbase management via exports or manual editing are time-consuming and error-prone.
             </p>
             <p>
-              <strong>Solution:</strong> A skill that forces termbase-first lookup, optional
-              external validation, comparison tables, and explicit human decisions before any
-              glossary write — with note fields aimed at machine consumers, not just linguists.
+              <strong>Solution:</strong> A skill that defines what repeatable process to follow before entering or updating a term: what assets to check, what resources to look up and what to consider when making a decision, with tops recommendations from the agent. The decision remains human, and agent speeds up entry creation in a repeatable, error-free manner.
             </p>
           </div>
           <div class="diagram" aria-label="Terminology lookup flowchart">
@@ -412,7 +404,7 @@ flowchart TD
         <div class="wrap slide-inner align-start">
           <div class="section-head">
             <h2>FAQ</h2>
-            <p>Questions Localization leaders usually ask about the UI autopilot — plus terminology governance.</p>
+            <p>Typical questions about the UI review skill.</p>
           </div>
           <div class="faq">
             <details>
