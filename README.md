@@ -1,36 +1,28 @@
 # AI skills for language management
 
-Public portfolio site for **Christelle Dessens** — Localization / AI workflow design.
+Portfolio for **Christelle Dessens** — Localization Manager / AI workflow design.
 
-**Live site:** https://cdessens-l10n.github.io/l10n-ai-portfolio/  
-**Repo:** https://github.com/cdessens-l10n/l10n-ai-portfolio
+**Live page:** [cdessens-l10n.github.io/l10n-ai-portfolio](https://cdessens-l10n.github.io/l10n-ai-portfolio/)
 
-## What this repo is
+## What’s showcased
 
-A static narrative page (`index.html` + `styles.css`) describing two flagship systems:
+This repo hosts a public narrative site about AI-encoded language-management systems built for Localization leaders (Managers, PMs, Heads/Directors):
 
-1. Product UI review autopilot  
-2. French terminology lookup  
+1. **Product UI review autopilot** — Agent skill + batch CLI that reviews every EN→FR Product UI segment in scoped TMS jobs, scores confidence, uploads reviewed bilingual files, and auto-completes only on clean Pass (score 100 + hard gates). Hold jobs stay with humans; ~90% of source words in a typical batch still need human finish.
+2. **French terminology lookup** — Governed research workflow: company termbase first, then official portals and competitor UIs, then interactive decisions before glossary writes — including FR term notes aimed at MT/LLM disambiguation.
+3. **Related workflows** — In-place design/board translation, TM alignment pipelines, CMS triage, email/webpage MXLIFF flows, subtitles, transcript review, TM leverage analysis, and scheduled Loc ops (summarized on the live page).
 
-plus a short “also built” strip and FAQ for Localization leaders.
+The live page also includes production-oriented outcomes, architecture diagrams, file-role inventories, and an FAQ written for Loc leadership.
 
-## What this repo is not
+## Repo layout
 
-- Not the private skill source trees, CLIs, or configs  
-- Not credentials, tokens, or TMS/project identifiers  
-- Keep personal skill zips **offline / private** — never commit them here  
-
-## Local preview
-
-Open `index.html` in a browser, or from this folder:
-
-```bash
-python3 -m http.server 8080
-```
-
-Then visit `http://localhost:8080`.
+| Path | Contents |
+|------|----------|
+| [`docs/`](docs/) | Static site served by GitHub Pages (`index.html`, CSS, assets) |
+| [`SITE.md`](SITE.md) | Local preview, publishing notes, and what is intentionally *not* in this repo |
+| `README.md` | This summary |
 
 ## Contact
 
-- LinkedIn: https://www.linkedin.com/in/frenchlanguagemanager  
-- Email: christelledessens@gmail.com  
+- LinkedIn: [linkedin.com/in/frenchlanguagemanager](https://www.linkedin.com/in/frenchlanguagemanager)
+- Email: christelledessens@gmail.com
