@@ -12,7 +12,7 @@ GitHub Pages is configured to publish from the **`docs/`** folder on the **`main
 
 | File | Role |
 |------|------|
-| `index.html` | Single-page portfolio (hero, outcomes, Autopilot, Terminology, also-built, FAQ, contact) |
+| `index.html` | Horizontal slide deck (intro → outcomes → Autopilot → Terminology → also-built → FAQ → contact) with left/right arrows, dots, and keyboard navigation |
 | `styles.css` | Layout and typography |
 | `assets/` | Optional static assets (diagrams, images) |
 | `.nojekyll` | Serve plain HTML without Jekyll processing |
